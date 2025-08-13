@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Santanu — Portfolio</title>
+    <meta name="description" content="Portfolio of Your Name — developer, designer, maker." />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="Santanu Mandal — Portfolio" />
+    <meta property="og:description" content="Projects, about and contact." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+
+<body>
+    <div class="site">
+
+
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#">Santanu Mandal</a>
+        
+                <nav class="nav" id="nav">
+                    <a href="#hero">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="sell.html" class="mobile-only">Sell Project</a>
+                    <a href="give.html" class="mobile-only">Give Your Work</a>
+                    <a class="btn primary" href="auth.html" style="margin-left:10px;">Sign In</a>
+                </nav>
+        
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+        <main>
+            <!-- HERO -->
+            <section id="hero" class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-copy">
+                        <h1>Hello — I’m <span class="accent">Santanu</span></h1>
+                        <p class="lead">I build modern web experiences. I’m a developer focused on front‑end, UI and
+                            accessibility.</p>
+                        <div class="hero-ctas">
+                            <a class="btn primary" href="#projects">View Projects</a>
+                            <a class="btn" href="#contact">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-photo" aria-hidden="true">
+                        <!-- Replace with your photo or illustration -->
+                        <div  class="photo-placeholder ">
+                            <a href="sa.jpg" >
+                                <img src="sa.jpg" width="100%" height="auto"  alt="Santanu Mandal" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="grid projects-grid">
+                        <!-- Project card (repeat) -->
+                        <article class="card project-card">
+                            <img src="https://via.placeholder.com/600x360" alt="Project screenshot" />
+                            <div class="card-body">
+                                <h3>Project One</h3>
+                                <p>Short description — what technologies you used and the impact.</p>
+                                <div class="card-actions">
+                                    <a class="link" href="#">Live</a>
+                                    <a class="link" href="#">Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card project-card">
+                            <img src="https://via.placeholder.com/600x360" alt="Project screenshot" />
+                            <div class="card-body">
+                                <h3>Project Two</h3>
+                                <p>Short description — what technologies you used and the impact.</p>
+                                <div class="card-actions">
+                                    <a class="link" href="#">Live</a>
+                                    <a class="link" href="#">Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Add more project cards as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="about" class="section alt">
+                <div class="container about-inner">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I’m a web developer who loves building delightful, accessible experiences. I focus on
+                            performance, maintainability and great UX.</p>
+                        <ul class="skills">
+                            <li>HTML &amp; CSS</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>React / Next.js</li>
+                            <li>Accessibility</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="num">5+</div>
+                            <div class="label">Years experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="num">20+</div>
+                            <div class="label">Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="section">
+                <div class="container contact-inner">
+                    <div class="contact-form-wrap">
+                        <h2>Contact</h2>
+                        <p>Want to work together? Fill the form and I’ll get back to you.</p>
+
+                        <!-- Replace FORM_ENDPOINT below with your Formspree URL (see README) -->
+                        <form id="contactForm" action="https://formspree.io/f/xjkojykj" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+
+                            <button type="submit" class="btn primary">Send Message</button>
+                            <div id="formStatus" role="status" aria-live="polite"></div>
+                        </form>
+
+                    </div>
+
+                    <aside class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Email: <a href="mailto:Mandalsantanu957@gmail.com">Mandalsantanu957@gmail.com</a></p>
+                        <p>Saralia: Bankura, India</p>
+                        <div class="socials">
+                            <a href="https://github.com/Santanumandal345">GitHub</a>
+                            <a href="https://www.linkedin.com/in/santanu-mandal-18b021248">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Santanu Mandal. Built with ❤️</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
